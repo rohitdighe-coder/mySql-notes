@@ -3,7 +3,7 @@
 Database = A Database is a collection of organized and related data.
            Database store information an organized manner in the form of a table.
 
-# Query for Database
+ Query for Database
 1) showing database = Show database
 2) creating database= Create Database < Database name >;
 
@@ -15,12 +15,12 @@ RDBMS = Relational Database Management System.
 Relational database
 .It organizes data into tables rows and colums.The tables are related to each other.
 
-#Tables- A structured list of data made up of rows and columns.A true heart of SQL. holds all the data. for example,employee table,student table etc.
-#Row- A single record in a table.  for example, one employee or one student.All tables are made up of one or more rows.
-#Column- A single field in a table. All values in a column are of the same data type.All tables are made up of one or more columns.
+Tables- A structured list of data made up of rows and columns.A true heart of SQL. holds all the data. for example,employee table,student table etc.
+Row- A single record in a table.  for example, one employee or one student.All tables are made up of one or more rows.
+Column- A single field in a table. All values in a column are of the same data type.All tables are made up of one or more columns.
 for example, employee name, employee id, employee address etc.
 -----------------------------------------------------------------------------------------------------------------------------------------------
-#SQl - Structured Query Language
+SQl - Structured Query Language
 .SQL is a standard language for accessing and manipulating databases.
 .SQL is used to communicate with a database.
 .SQL can be used to perform tasks such as update data on a database, or retrieve data from a database.
@@ -95,3 +95,4 @@ values
 4) Retrieve all columns and rows from the departments table.
 select * from departments;
 ---------------------------------------------------------------------------------------------------------
+
