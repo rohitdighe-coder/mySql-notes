@@ -39,81 +39,14 @@ WHERE department = 'Dev';
 
 ✅ Explanation:
 Retrieves all columns and rows from the employees table where the department is 'Dev'.
-
+-------------------------------------------------------------------------------------------------------
 Operators in WHERE Clause:
-
-= : equal to
-<> or != : not equal to
-> : greater than
-< : less than
->= : greater than or equal to
-<= : less than or equal to
 BETWEEN : within a range
 LIKE : pattern matching
 IN : within a set of values
-using and or not operators.
+using and, or & not operators.
 ------------------------------------------------------------------------------------------------
-Start with first is  equal to operator (=)
-Example:
-SELECT * FROM employees
-WHERE salary = 65000;   
-✅ Explanation:
-Retrieves all columns and rows from the employees table where the salary is equal to 65000
 
-----------------------------------------------------------------------------------------------
-Using greater than operator (>)
-syntax:
-SELECT * FROM table_name
-WHERE column_name > value;
-Example:
-SELECT * FROM employees
-WHERE salary > 50000;
-✅ Explanation:
-Retrieves all columns and rows from the employees table where the salary is greater than 50000
-----------------------------------------------------------------------------------------------
-Using less than operator (<)
-syntax:
-SELECT * FROM table_name
-WHERE column_name < value;
-Example:
-SELECT * FROM employees
-WHERE salary < 50000;
-✅ Explanation:
-Retrieves all columns and rows from the employees table where the salary is less than 50000
-----------------------------------------------------------------------------------------------
-Using greater than or equal to operator (>=)
-syntax:
-SELECT * FROM table_name
-WHERE column_name >= value;
-Example:
-SELECT * FROM employees
-WHERE salary >= 55000;
-✅ Explanation:
-Retrieves all columns and rows from the employees table where the salary is greater than or equal to 50000
---------------------------------------------------------------------------------------------------------------------
-Using less than or equal to operator (<=)
-syntax:
-SELECT * FROM table_name
-WHERE column_name <= value; 
-Example:
-SELECT * FROM employees
-WHERE salary <= 55000;
-✅ Explanation:
-Retrieves all columns and rows from the employees table where the salary is less than or equal to 55000
------------------------------------------------------------------------------------------------------------------------
-
-Using not equal to operator (<> or !=) 
- Difference between <> and !=  - They are functionally equivalent and can be used interchangeably in SQL to represent "not equal to" condition.
-Example:
-SELECT * FROM employees
-WHERE salary <> 60000;
-✅ Explanation:
-Retrieves all columns and rows from the employees table where the salary is not equal to 60000
-Example:
-SELECT * FROM employees
-WHERE salary != 60000;     
-✅ Explanation:
-Retrieves all columns and rows from the employees table where the salary is not equal to 60000
 ------------------------------------------------------------------------------------------------------------------------------------------
 Using BETWEEN operator
 BETWEEN operator is used to filter the result set within a certain range. The range is inclusive, meaning it includes the boundary values.
@@ -163,6 +96,7 @@ Retrieves all columns and rows from the employees table where the name is exactl
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 Using IN operator
+ 
 The IN Operator Checks if a column's value matches any value in a given list of values.
 it's shorthand for multiple OR conditions.
 syntax:
@@ -177,6 +111,7 @@ Retrieves all columns and rows from the employees table where the department is 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
 Using AND, OR, NOT operators
+ 
 AND operator: used to combine multiple conditions in a WHERE clause. All conditions must be true for
 the row to be included in the result set.
 syntax:
@@ -211,6 +146,35 @@ WHERE NOT department = 'Dev';
 ✅ Explanation:
 Retrieves all columns and rows from the employees table where the department is not 'Dev'.
 ---------------------------------------------------------------------------------------------------------------------------------------------
+ORDER BY Clause
+used to sort the result set in ascending or descending order based on one or more columns.
+By default, the ORDER BY clause sorts the result set in ascending order. To sort in descending order, use the DESC keyword.
+# 1 2 3 4 5 - ascending order-(lowest to highest )
+# 5 4 3 2 1 - descending order-(highest to lowest )
+Default sorting order is ascending.(asc)
+Descending order - desc
+syntax:
+SELECT * FROM table_name
+ORDER BY column1 [ASC|DESC], column2 [ASC|DESC], ...;
+Example:
+SELECT * FROM employees 
+ORDER BY salary DESC;
+✅ Explanation:
+Retrieves all columns and rows from the employees table and sorts the result set in descending order based on the salary column.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+LIMIT Clause
+used to specify the maximum number of records to return in the result set.
+syntax:
+SELECT * FROM table_name
+LIMIT number;
+Example:
+SELECT * FROM employees
+LIMIT 5;
+✅ Explanation:
+Retrieves all columns and the first 5 rows from the employees table.
+------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
